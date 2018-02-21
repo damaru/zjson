@@ -71,6 +71,7 @@ ZJVal* zj_object(void);
 const ZJVal* zj_object_get(const ZJVal *obj, const char *key);
 void zj_object_set(ZJVal *obj, const char *key, ZJType t, ...);
 void zj_object_set_ref(ZJVal *obj, const char *key, ZJVal *val);
+void zj_object_clear(ZJVal *obj, const char *key);
 void zj_object_foreach(const ZJVal *obj, int (*func)(const char *, ZJVal*));
 
 #define ZJO_SET(OBJ, IND, VAL) zj_object_set((OBJ), (IND), TYPE((VAL)), (VAL))

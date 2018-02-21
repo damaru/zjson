@@ -362,10 +362,9 @@ void zj_array_append(ZJVal *obj, ZJType t, ...)
 
 void zj_array_foreach(const ZJVal *obj, int (*func)(int, ZJVal *))
 {
-	for (int i = 0; i < obj->array->count; i++) {
+	for (int i = 0; i < obj->array->count; i++)
 		if (func(i, obj->array->data[i]))
 			break;
-	}
 }
 
 /******************************************************************************/
@@ -404,9 +403,9 @@ void zj_object_clear(ZJVal *obj, const char *key)
 			ZJVal *old = object->pairs[i].value;
 			zj_delete(old);
 			zj_free(object->pairs[i].key);
-			memcpy(&object->pairs[i], &object->pairs[i + 1],
-			       (object->count - 1) * sizeof(ZJPair));
 			object->count--;
+			for (int j = i; j < object->count; j++)
+				object->pairs[j] = object->pairs[j + 1];
 			return;
 		}
 	}
@@ -419,10 +418,12 @@ void zj_object_set_ref(ZJVal *obj, const char *key, ZJVal *val)
 	assert(obj->type == ZJTObj);
 	for (i = 0; i < obj->object->count && obj->object->pairs[i].key; i++) {
 		if (strcmp(key, obj->object->pairs[i].key) == 0) {
-			zj_delete(obj->object->pairs[i].value);
+			if (val != obj->object->pairs[i].value)
+				zj_delete(obj->object->pairs[i].value);
 			zj_free(obj->object->pairs[i].key);
 			obj->object->pairs[i].value = val;
 			obj->object->pairs[i].key = key;
+			return;
 		}
 	}
 
@@ -464,14 +465,21 @@ void zj_object_set(ZJVal *obj, const char *index, ZJType t, ...)
 
 void zj_object_foreach(const ZJVal *obj, int (*func)(const char *, ZJVal *))
 {
-	for (int i = 0; i < obj->object->count; i++) {
+	for (int i = 0; i < obj->object->count; i++)
 		if (func(obj->object->pairs[i].key, obj->object->pairs[i].value))
 			break;
-	}
+}
+
+void zj_object_set_val(ZJVal *obj, const char *key, ZJVal *val)
+{
+	zj_object_set_ref(obj, strdup(key), zj_ref(val));
 }
 
 /******************************************************************************/
 
+/*
+	https://tools.ietf.org/html/rfc7396
+*/
 ZJVal *zj_patch(ZJVal *target, const ZJVal *patch)
 {
 	if (patch->type == ZJTObj) {

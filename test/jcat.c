@@ -1,6 +1,7 @@
 #include "json.h"
 #include <stdlib.h>
 #include <unistd.h>
+
 int main(int argc, char **argv)
 {
 	ZJVal *json;
@@ -16,9 +17,8 @@ int main(int argc, char **argv)
 	if (json) {
 		if (argv[i])
 			zj_print(zj_lookup(json, argv[i]));
-		else {
+		else
 			zj_print(json);
-		}
 		zj_delete(json);
 	}
 }

@@ -1,7 +1,8 @@
 
 
 OBJS= build/obj/gen.o build/obj/json.o build/obj/print.o build/obj/parser.o build/obj/io.o build/obj/builder.o build/obj/pointer.o
-TESTS=build/test/ref build/test/parsef build/test/test build/test/jcat build/test/new build/test/custom build/test/patch build/test/jlint build/test/mmap build/test/get build/test/loop
+TESTS=build/test/ref build/test/parsef build/test/test build/test/jcat build/test/new build/test/custom build/test/patch build/test/jlint build/test/mmap build/test/get build/test/loop\
+	  build/test/clear
 
 all: build/lib/libzjson.so build/lib/libzjson.a $(TESTS) 
 

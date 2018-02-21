@@ -3,11 +3,7 @@
 int main(int argc, char **argv) {
     zj_print(zj_sparsef( JS(
         {
-		    "tmp":[ 1, 2, 3, 3
-			, 45, 
-			56.34234234234253412135346456234236, {"hello":"world", 
-				"this":"is cool"},
-            %d],
+		    "tmp":[ 1, 2, 3, 3 , 45, 56.34234234234253412135346456234236, {"hello":"world", "this":"is cool"}, %d],
             "Hello": "%s",
             "World": %s
         }
