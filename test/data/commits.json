@@ -1,0 +1,2293 @@
+[
+  {
+    "sha": "aefa87213821d1ae3611f9bba375b4926056a0ac",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2018-01-09T19:31:32Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2018-01-09T19:31:32Z"
+      },
+      "message": "added gitignore",
+      "tree": {
+        "sha": "43306a4954460a42c3e2ec9012e2dba403f113ec",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/43306a4954460a42c3e2ec9012e2dba403f113ec"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/aefa87213821d1ae3611f9bba375b4926056a0ac",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/aefa87213821d1ae3611f9bba375b4926056a0ac",
+    "html_url": "https://github.com/damaru/zwm/commit/aefa87213821d1ae3611f9bba375b4926056a0ac",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/aefa87213821d1ae3611f9bba375b4926056a0ac/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3b8f61215239790ac3c33165826074bb80a32851",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/3b8f61215239790ac3c33165826074bb80a32851",
+        "html_url": "https://github.com/damaru/zwm/commit/3b8f61215239790ac3c33165826074bb80a32851"
+      }
+    ]
+  },
+  {
+    "sha": "3b8f61215239790ac3c33165826074bb80a32851",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2018-01-09T19:27:58Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2018-01-09T19:27:58Z"
+      },
+      "message": "Merge branch 'master' of https://github.com/damaru/zwm",
+      "tree": {
+        "sha": "7beda354788d122376baf25c11c1c63d7209790f",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/7beda354788d122376baf25c11c1c63d7209790f"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/3b8f61215239790ac3c33165826074bb80a32851",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/3b8f61215239790ac3c33165826074bb80a32851",
+    "html_url": "https://github.com/damaru/zwm/commit/3b8f61215239790ac3c33165826074bb80a32851",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/3b8f61215239790ac3c33165826074bb80a32851/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7acd2a57736cd20b5b68ef3b3015c0898ba5c452",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/7acd2a57736cd20b5b68ef3b3015c0898ba5c452",
+        "html_url": "https://github.com/damaru/zwm/commit/7acd2a57736cd20b5b68ef3b3015c0898ba5c452"
+      },
+      {
+        "sha": "9a300e41f8ecf0146c387d8ba57513343f95e4ca",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/9a300e41f8ecf0146c387d8ba57513343f95e4ca",
+        "html_url": "https://github.com/damaru/zwm/commit/9a300e41f8ecf0146c387d8ba57513343f95e4ca"
+      }
+    ]
+  },
+  {
+    "sha": "7acd2a57736cd20b5b68ef3b3015c0898ba5c452",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2018-01-09T19:26:02Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2018-01-09T19:26:02Z"
+      },
+      "message": "Various fixes\n\n1. compilation fixes\n2. indentation\n3. dependency issues\n4. cleanup config\n5. config policies",
+      "tree": {
+        "sha": "383e3ba1de5f9b2e3aebf533856a130907532a1f",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/383e3ba1de5f9b2e3aebf533856a130907532a1f"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/7acd2a57736cd20b5b68ef3b3015c0898ba5c452",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/7acd2a57736cd20b5b68ef3b3015c0898ba5c452",
+    "html_url": "https://github.com/damaru/zwm/commit/7acd2a57736cd20b5b68ef3b3015c0898ba5c452",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/7acd2a57736cd20b5b68ef3b3015c0898ba5c452/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19243fcd7649380c4fef6085a838bfd666f32498",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/19243fcd7649380c4fef6085a838bfd666f32498",
+        "html_url": "https://github.com/damaru/zwm/commit/19243fcd7649380c4fef6085a838bfd666f32498"
+      }
+    ]
+  },
+  {
+    "sha": "9a300e41f8ecf0146c387d8ba57513343f95e4ca",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T18:24:19Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T18:24:19Z"
+      },
+      "message": "Update x11-window-id.c",
+      "tree": {
+        "sha": "7253f39094b9199b5548ea435d0b83545d76e9da",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/7253f39094b9199b5548ea435d0b83545d76e9da"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/9a300e41f8ecf0146c387d8ba57513343f95e4ca",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/9a300e41f8ecf0146c387d8ba57513343f95e4ca",
+    "html_url": "https://github.com/damaru/zwm/commit/9a300e41f8ecf0146c387d8ba57513343f95e4ca",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/9a300e41f8ecf0146c387d8ba57513343f95e4ca/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19243fcd7649380c4fef6085a838bfd666f32498",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/19243fcd7649380c4fef6085a838bfd666f32498",
+        "html_url": "https://github.com/damaru/zwm/commit/19243fcd7649380c4fef6085a838bfd666f32498"
+      }
+    ]
+  },
+  {
+    "sha": "19243fcd7649380c4fef6085a838bfd666f32498",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T17:27:48Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T17:27:48Z"
+      },
+      "message": "rename zwm_client_warp to ..mouse_warp",
+      "tree": {
+        "sha": "54290189a98ee325d0d3885eddf822b9d3bfbfdd",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/54290189a98ee325d0d3885eddf822b9d3bfbfdd"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/19243fcd7649380c4fef6085a838bfd666f32498",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/19243fcd7649380c4fef6085a838bfd666f32498",
+    "html_url": "https://github.com/damaru/zwm/commit/19243fcd7649380c4fef6085a838bfd666f32498",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/19243fcd7649380c4fef6085a838bfd666f32498/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9a6d0fee232322643fd18f1884f9df711c7ef0c5",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/9a6d0fee232322643fd18f1884f9df711c7ef0c5",
+        "html_url": "https://github.com/damaru/zwm/commit/9a6d0fee232322643fd18f1884f9df711c7ef0c5"
+      },
+      {
+        "sha": "13a1d2c864c513703327d50be938fcf5afcb1e63",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/13a1d2c864c513703327d50be938fcf5afcb1e63",
+        "html_url": "https://github.com/damaru/zwm/commit/13a1d2c864c513703327d50be938fcf5afcb1e63"
+      }
+    ]
+  },
+  {
+    "sha": "9a6d0fee232322643fd18f1884f9df711c7ef0c5",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T17:25:03Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T17:25:03Z"
+      },
+      "message": "rename zwm_client_warp to ..mouse_warp",
+      "tree": {
+        "sha": "e1f008be390921fa139af1ebbc9aa663f9fd1ce8",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/e1f008be390921fa139af1ebbc9aa663f9fd1ce8"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/9a6d0fee232322643fd18f1884f9df711c7ef0c5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/9a6d0fee232322643fd18f1884f9df711c7ef0c5",
+    "html_url": "https://github.com/damaru/zwm/commit/9a6d0fee232322643fd18f1884f9df711c7ef0c5",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/9a6d0fee232322643fd18f1884f9df711c7ef0c5/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+        "html_url": "https://github.com/damaru/zwm/commit/dbd93702411d7d079eb1ff7ee1b351c1fc472343"
+      }
+    ]
+  },
+  {
+    "sha": "13a1d2c864c513703327d50be938fcf5afcb1e63",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T15:39:28Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T15:39:28Z"
+      },
+      "message": "added readme",
+      "tree": {
+        "sha": "5d0ffb6dfac2edb9526c1c08e8dcd4ce0a83b6e4",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/5d0ffb6dfac2edb9526c1c08e8dcd4ce0a83b6e4"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/13a1d2c864c513703327d50be938fcf5afcb1e63",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/13a1d2c864c513703327d50be938fcf5afcb1e63",
+    "html_url": "https://github.com/damaru/zwm/commit/13a1d2c864c513703327d50be938fcf5afcb1e63",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/13a1d2c864c513703327d50be938fcf5afcb1e63/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+        "html_url": "https://github.com/damaru/zwm/commit/dbd93702411d7d079eb1ff7ee1b351c1fc472343"
+      }
+    ]
+  },
+  {
+    "sha": "dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T15:34:45Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T15:34:45Z"
+      },
+      "message": "compile fixes",
+      "tree": {
+        "sha": "497f7f7b9eaec60370692985b5080f790debdc7f",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/497f7f7b9eaec60370692985b5080f790debdc7f"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+    "html_url": "https://github.com/damaru/zwm/commit/dbd93702411d7d079eb1ff7ee1b351c1fc472343",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/dbd93702411d7d079eb1ff7ee1b351c1fc472343/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6787addf3143a8ce3cb558d47bf00294524b59a5",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/6787addf3143a8ce3cb558d47bf00294524b59a5",
+        "html_url": "https://github.com/damaru/zwm/commit/6787addf3143a8ce3cb558d47bf00294524b59a5"
+      }
+    ]
+  },
+  {
+    "sha": "6787addf3143a8ce3cb558d47bf00294524b59a5",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:55:33Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:55:33Z"
+      },
+      "message": "mkdir build",
+      "tree": {
+        "sha": "56aa4c6657519a10c55f684c91beea1e568d08c1",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/56aa4c6657519a10c55f684c91beea1e568d08c1"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/6787addf3143a8ce3cb558d47bf00294524b59a5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/6787addf3143a8ce3cb558d47bf00294524b59a5",
+    "html_url": "https://github.com/damaru/zwm/commit/6787addf3143a8ce3cb558d47bf00294524b59a5",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/6787addf3143a8ce3cb558d47bf00294524b59a5/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d1d075bf4e65b1d76ac960cd8ef114d291a17ba0",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/d1d075bf4e65b1d76ac960cd8ef114d291a17ba0",
+        "html_url": "https://github.com/damaru/zwm/commit/d1d075bf4e65b1d76ac960cd8ef114d291a17ba0"
+      }
+    ]
+  },
+  {
+    "sha": "d1d075bf4e65b1d76ac960cd8ef114d291a17ba0",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:42:59Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:42:59Z"
+      },
+      "message": "fix license",
+      "tree": {
+        "sha": "c4fb121b36cfd5a9fde8facd96bd27aad857859d",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/c4fb121b36cfd5a9fde8facd96bd27aad857859d"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/d1d075bf4e65b1d76ac960cd8ef114d291a17ba0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/d1d075bf4e65b1d76ac960cd8ef114d291a17ba0",
+    "html_url": "https://github.com/damaru/zwm/commit/d1d075bf4e65b1d76ac960cd8ef114d291a17ba0",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/d1d075bf4e65b1d76ac960cd8ef114d291a17ba0/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e705a14e7503a5e7d64c0a9d0db703c70b4888f6",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/e705a14e7503a5e7d64c0a9d0db703c70b4888f6",
+        "html_url": "https://github.com/damaru/zwm/commit/e705a14e7503a5e7d64c0a9d0db703c70b4888f6"
+      },
+      {
+        "sha": "7ec9fba765903e2cef5ec5370a56a3d990e3cf70",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/7ec9fba765903e2cef5ec5370a56a3d990e3cf70",
+        "html_url": "https://github.com/damaru/zwm/commit/7ec9fba765903e2cef5ec5370a56a3d990e3cf70"
+      }
+    ]
+  },
+  {
+    "sha": "7ec9fba765903e2cef5ec5370a56a3d990e3cf70",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:39:04Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:39:04Z"
+      },
+      "message": "Initial commit",
+      "tree": {
+        "sha": "fa5142eb56c210d37269b38e43a2b38ab2c852c9",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/fa5142eb56c210d37269b38e43a2b38ab2c852c9"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/7ec9fba765903e2cef5ec5370a56a3d990e3cf70",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/7ec9fba765903e2cef5ec5370a56a3d990e3cf70",
+    "html_url": "https://github.com/damaru/zwm/commit/7ec9fba765903e2cef5ec5370a56a3d990e3cf70",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/7ec9fba765903e2cef5ec5370a56a3d990e3cf70/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+
+    ]
+  },
+  {
+    "sha": "e705a14e7503a5e7d64c0a9d0db703c70b4888f6",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:35:31Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:35:31Z"
+      },
+      "message": "various fixes",
+      "tree": {
+        "sha": "80f5b5a48c1cbc80d77d585e38e9bfba50c302eb",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/80f5b5a48c1cbc80d77d585e38e9bfba50c302eb"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/e705a14e7503a5e7d64c0a9d0db703c70b4888f6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/e705a14e7503a5e7d64c0a9d0db703c70b4888f6",
+    "html_url": "https://github.com/damaru/zwm/commit/e705a14e7503a5e7d64c0a9d0db703c70b4888f6",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/e705a14e7503a5e7d64c0a9d0db703c70b4888f6/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5b0f81e1c6f7954b0005082a10e050c8611f0d34",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/5b0f81e1c6f7954b0005082a10e050c8611f0d34",
+        "html_url": "https://github.com/damaru/zwm/commit/5b0f81e1c6f7954b0005082a10e050c8611f0d34"
+      }
+    ]
+  },
+  {
+    "sha": "5b0f81e1c6f7954b0005082a10e050c8611f0d34",
+    "commit": {
+      "author": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:34:26Z"
+      },
+      "committer": {
+        "name": "damaru",
+        "email": "damaru@gmail.com",
+        "date": "2016-04-01T14:34:26Z"
+      },
+      "message": "various fixes",
+      "tree": {
+        "sha": "3b95e0a46a0a079d10380079c99dcb95fab064f9",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/3b95e0a46a0a079d10380079c99dcb95fab064f9"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/5b0f81e1c6f7954b0005082a10e050c8611f0d34",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/5b0f81e1c6f7954b0005082a10e050c8611f0d34",
+    "html_url": "https://github.com/damaru/zwm/commit/5b0f81e1c6f7954b0005082a10e050c8611f0d34",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/5b0f81e1c6f7954b0005082a10e050c8611f0d34/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a38d8b23c4757ef2981c8ab02a6cfed273155d8e",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/a38d8b23c4757ef2981c8ab02a6cfed273155d8e",
+        "html_url": "https://github.com/damaru/zwm/commit/a38d8b23c4757ef2981c8ab02a6cfed273155d8e"
+      }
+    ]
+  },
+  {
+    "sha": "a38d8b23c4757ef2981c8ab02a6cfed273155d8e",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-06-08T04:10:57Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-06-08T04:10:57Z"
+      },
+      "message": "cycle follow session",
+      "tree": {
+        "sha": "07e3635f10c7ac2abddaac0940d1f12f444195df",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/07e3635f10c7ac2abddaac0940d1f12f444195df"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/a38d8b23c4757ef2981c8ab02a6cfed273155d8e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/a38d8b23c4757ef2981c8ab02a6cfed273155d8e",
+    "html_url": "https://github.com/damaru/zwm/commit/a38d8b23c4757ef2981c8ab02a6cfed273155d8e",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/a38d8b23c4757ef2981c8ab02a6cfed273155d8e/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cfdd4cfd0960cf1fb775ef4090fdd56782ad6300",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/cfdd4cfd0960cf1fb775ef4090fdd56782ad6300",
+        "html_url": "https://github.com/damaru/zwm/commit/cfdd4cfd0960cf1fb775ef4090fdd56782ad6300"
+      }
+    ]
+  },
+  {
+    "sha": "cfdd4cfd0960cf1fb775ef4090fdd56782ad6300",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-20T13:17:13Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-20T13:17:13Z"
+      },
+      "message": "fix gvim configure_request resize bug",
+      "tree": {
+        "sha": "ef0f06fd83af826ba77c4a88625888dbf9cb08e0",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/ef0f06fd83af826ba77c4a88625888dbf9cb08e0"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/cfdd4cfd0960cf1fb775ef4090fdd56782ad6300",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/cfdd4cfd0960cf1fb775ef4090fdd56782ad6300",
+    "html_url": "https://github.com/damaru/zwm/commit/cfdd4cfd0960cf1fb775ef4090fdd56782ad6300",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/cfdd4cfd0960cf1fb775ef4090fdd56782ad6300/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "744b1334295ffc59deda9f41de4b9c486685f348",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/744b1334295ffc59deda9f41de4b9c486685f348",
+        "html_url": "https://github.com/damaru/zwm/commit/744b1334295ffc59deda9f41de4b9c486685f348"
+      }
+    ]
+  },
+  {
+    "sha": "744b1334295ffc59deda9f41de4b9c486685f348",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-20T11:54:57Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-20T11:54:57Z"
+      },
+      "message": "java splashscreen fix",
+      "tree": {
+        "sha": "4576768bfd3e31cfc82d65cff13c69c809106764",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/4576768bfd3e31cfc82d65cff13c69c809106764"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/744b1334295ffc59deda9f41de4b9c486685f348",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/744b1334295ffc59deda9f41de4b9c486685f348",
+    "html_url": "https://github.com/damaru/zwm/commit/744b1334295ffc59deda9f41de4b9c486685f348",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/744b1334295ffc59deda9f41de4b9c486685f348/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bafdfafd3a8dbc094dfc76529297a8a662777b51",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/bafdfafd3a8dbc094dfc76529297a8a662777b51",
+        "html_url": "https://github.com/damaru/zwm/commit/bafdfafd3a8dbc094dfc76529297a8a662777b51"
+      }
+    ]
+  },
+  {
+    "sha": "bafdfafd3a8dbc094dfc76529297a8a662777b51",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-20T11:07:35Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-20T11:07:35Z"
+      },
+      "message": "java fix",
+      "tree": {
+        "sha": "329e4442b29eace6db80c8cc1fb94042cd17760e",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/329e4442b29eace6db80c8cc1fb94042cd17760e"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/bafdfafd3a8dbc094dfc76529297a8a662777b51",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/bafdfafd3a8dbc094dfc76529297a8a662777b51",
+    "html_url": "https://github.com/damaru/zwm/commit/bafdfafd3a8dbc094dfc76529297a8a662777b51",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/bafdfafd3a8dbc094dfc76529297a8a662777b51/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7df20748d8aca052c140395d8af5513e73cf8938",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/7df20748d8aca052c140395d8af5513e73cf8938",
+        "html_url": "https://github.com/damaru/zwm/commit/7df20748d8aca052c140395d8af5513e73cf8938"
+      }
+    ]
+  },
+  {
+    "sha": "7df20748d8aca052c140395d8af5513e73cf8938",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-14T10:33:18Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2013-02-14T10:33:18Z"
+      },
+      "message": "pid, fullscreen",
+      "tree": {
+        "sha": "bc7803b6287fc2fbe235ac9b53b6dc4663bb9848",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/bc7803b6287fc2fbe235ac9b53b6dc4663bb9848"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/7df20748d8aca052c140395d8af5513e73cf8938",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/7df20748d8aca052c140395d8af5513e73cf8938",
+    "html_url": "https://github.com/damaru/zwm/commit/7df20748d8aca052c140395d8af5513e73cf8938",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/7df20748d8aca052c140395d8af5513e73cf8938/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0b1fd9754faecaa03b270a9abec817cab1fb4fce",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/0b1fd9754faecaa03b270a9abec817cab1fb4fce",
+        "html_url": "https://github.com/damaru/zwm/commit/0b1fd9754faecaa03b270a9abec817cab1fb4fce"
+      }
+    ]
+  },
+  {
+    "sha": "0b1fd9754faecaa03b270a9abec817cab1fb4fce",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-23T19:56:41Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-23T19:56:41Z"
+      },
+      "message": "features:\n* root window click\n* config.attach_last",
+      "tree": {
+        "sha": "1cda1b53bdf29f1c9fe7ceac02e3447ee9c188eb",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/1cda1b53bdf29f1c9fe7ceac02e3447ee9c188eb"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/0b1fd9754faecaa03b270a9abec817cab1fb4fce",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/0b1fd9754faecaa03b270a9abec817cab1fb4fce",
+    "html_url": "https://github.com/damaru/zwm/commit/0b1fd9754faecaa03b270a9abec817cab1fb4fce",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/0b1fd9754faecaa03b270a9abec817cab1fb4fce/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5033e3a81b38012587e364c971455754cc08296c",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/5033e3a81b38012587e364c971455754cc08296c",
+        "html_url": "https://github.com/damaru/zwm/commit/5033e3a81b38012587e364c971455754cc08296c"
+      }
+    ]
+  },
+  {
+    "sha": "5033e3a81b38012587e364c971455754cc08296c",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-13T06:16:02Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-13T06:16:02Z"
+      },
+      "message": "added grid",
+      "tree": {
+        "sha": "9638ddb2b48965ab7977b05a897b51e0aedd1f4b",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/9638ddb2b48965ab7977b05a897b51e0aedd1f4b"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/5033e3a81b38012587e364c971455754cc08296c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/5033e3a81b38012587e364c971455754cc08296c",
+    "html_url": "https://github.com/damaru/zwm/commit/5033e3a81b38012587e364c971455754cc08296c",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/5033e3a81b38012587e364c971455754cc08296c/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "018b180c864b6add6541b7cf8a1888ef881d499e",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/018b180c864b6add6541b7cf8a1888ef881d499e",
+        "html_url": "https://github.com/damaru/zwm/commit/018b180c864b6add6541b7cf8a1888ef881d499e"
+      }
+    ]
+  },
+  {
+    "sha": "018b180c864b6add6541b7cf8a1888ef881d499e",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T17:32:19Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T17:32:19Z"
+      },
+      "message": "factorize screen_coords",
+      "tree": {
+        "sha": "8a9c1a12b50953ed93795d67a4a7fff423ffdb80",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/8a9c1a12b50953ed93795d67a4a7fff423ffdb80"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/018b180c864b6add6541b7cf8a1888ef881d499e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/018b180c864b6add6541b7cf8a1888ef881d499e",
+    "html_url": "https://github.com/damaru/zwm/commit/018b180c864b6add6541b7cf8a1888ef881d499e",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/018b180c864b6add6541b7cf8a1888ef881d499e/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "306946a6f28f5c3c0308aa5623bc96d3ee641ea0",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/306946a6f28f5c3c0308aa5623bc96d3ee641ea0",
+        "html_url": "https://github.com/damaru/zwm/commit/306946a6f28f5c3c0308aa5623bc96d3ee641ea0"
+      }
+    ]
+  },
+  {
+    "sha": "306946a6f28f5c3c0308aa5623bc96d3ee641ea0",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T17:14:42Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T17:14:42Z"
+      },
+      "message": "layout cleanup",
+      "tree": {
+        "sha": "b612b7862400f8a6ae9a73e0bf3e0339a0a75e21",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/b612b7862400f8a6ae9a73e0bf3e0339a0a75e21"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/306946a6f28f5c3c0308aa5623bc96d3ee641ea0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/306946a6f28f5c3c0308aa5623bc96d3ee641ea0",
+    "html_url": "https://github.com/damaru/zwm/commit/306946a6f28f5c3c0308aa5623bc96d3ee641ea0",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/306946a6f28f5c3c0308aa5623bc96d3ee641ea0/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3e71472d3f1898044f54523e622bd008fa946a28",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/3e71472d3f1898044f54523e622bd008fa946a28",
+        "html_url": "https://github.com/damaru/zwm/commit/3e71472d3f1898044f54523e622bd008fa946a28"
+      }
+    ]
+  },
+  {
+    "sha": "3e71472d3f1898044f54523e622bd008fa946a28",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T12:12:56Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T12:12:56Z"
+      },
+      "message": "fix mwfact for all views",
+      "tree": {
+        "sha": "d721b0bfacad1d9d4dc2b4367dbd27cf93ec443a",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/d721b0bfacad1d9d4dc2b4367dbd27cf93ec443a"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/3e71472d3f1898044f54523e622bd008fa946a28",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/3e71472d3f1898044f54523e622bd008fa946a28",
+    "html_url": "https://github.com/damaru/zwm/commit/3e71472d3f1898044f54523e622bd008fa946a28",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/3e71472d3f1898044f54523e622bd008fa946a28/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "50a349dbf0968509bc29b420c4a2708f1bff3596",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/50a349dbf0968509bc29b420c4a2708f1bff3596",
+        "html_url": "https://github.com/damaru/zwm/commit/50a349dbf0968509bc29b420c4a2708f1bff3596"
+      }
+    ]
+  },
+  {
+    "sha": "50a349dbf0968509bc29b420c4a2708f1bff3596",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T12:06:41Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T12:06:41Z"
+      },
+      "message": "view applies to floating windows as well",
+      "tree": {
+        "sha": "8a46384353926485d3eb9625bb459cac2d2e3cb2",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/8a46384353926485d3eb9625bb459cac2d2e3cb2"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/50a349dbf0968509bc29b420c4a2708f1bff3596",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/50a349dbf0968509bc29b420c4a2708f1bff3596",
+    "html_url": "https://github.com/damaru/zwm/commit/50a349dbf0968509bc29b420c4a2708f1bff3596",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/50a349dbf0968509bc29b420c4a2708f1bff3596/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cbe2568c96cc034c14be8dc27b133da7cf124419",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/cbe2568c96cc034c14be8dc27b133da7cf124419",
+        "html_url": "https://github.com/damaru/zwm/commit/cbe2568c96cc034c14be8dc27b133da7cf124419"
+      }
+    ]
+  },
+  {
+    "sha": "cbe2568c96cc034c14be8dc27b133da7cf124419",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T05:13:54Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-12T05:13:54Z"
+      },
+      "message": "bugfix for initial view mapping on other second screen",
+      "tree": {
+        "sha": "2b5a497b1470a92f67930baa80f980182b22f174",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/2b5a497b1470a92f67930baa80f980182b22f174"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/cbe2568c96cc034c14be8dc27b133da7cf124419",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/cbe2568c96cc034c14be8dc27b133da7cf124419",
+    "html_url": "https://github.com/damaru/zwm/commit/cbe2568c96cc034c14be8dc27b133da7cf124419",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/cbe2568c96cc034c14be8dc27b133da7cf124419/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3dc9b39127b594054e22ee48a5f7c1e93897da46",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/3dc9b39127b594054e22ee48a5f7c1e93897da46",
+        "html_url": "https://github.com/damaru/zwm/commit/3dc9b39127b594054e22ee48a5f7c1e93897da46"
+      }
+    ]
+  },
+  {
+    "sha": "3dc9b39127b594054e22ee48a5f7c1e93897da46",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-11T17:10:12Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-11T17:10:12Z"
+      },
+      "message": "fullscreen zen,new client displaces old client in zen mode",
+      "tree": {
+        "sha": "53398fd104b48a63ed14b1ac6064f1a6d32c73f8",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/53398fd104b48a63ed14b1ac6064f1a6d32c73f8"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/3dc9b39127b594054e22ee48a5f7c1e93897da46",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/3dc9b39127b594054e22ee48a5f7c1e93897da46",
+    "html_url": "https://github.com/damaru/zwm/commit/3dc9b39127b594054e22ee48a5f7c1e93897da46",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/3dc9b39127b594054e22ee48a5f7c1e93897da46/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "93cd26f7c60085cf665f3971611e9322e075bfd6",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/93cd26f7c60085cf665f3971611e9322e075bfd6",
+        "html_url": "https://github.com/damaru/zwm/commit/93cd26f7c60085cf665f3971611e9322e075bfd6"
+      }
+    ]
+  },
+  {
+    "sha": "93cd26f7c60085cf665f3971611e9322e075bfd6",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-10T18:05:14Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-10T18:05:14Z"
+      },
+      "message": "misc cleanup",
+      "tree": {
+        "sha": "bd717aa802d37ca38d722a78806301062c7bf675",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/bd717aa802d37ca38d722a78806301062c7bf675"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/93cd26f7c60085cf665f3971611e9322e075bfd6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/93cd26f7c60085cf665f3971611e9322e075bfd6",
+    "html_url": "https://github.com/damaru/zwm/commit/93cd26f7c60085cf665f3971611e9322e075bfd6",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/93cd26f7c60085cf665f3971611e9322e075bfd6/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d910d234c66472bd3d1f63b0e2a8918334614c49",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/d910d234c66472bd3d1f63b0e2a8918334614c49",
+        "html_url": "https://github.com/damaru/zwm/commit/d910d234c66472bd3d1f63b0e2a8918334614c49"
+      }
+    ]
+  },
+  {
+    "sha": "d910d234c66472bd3d1f63b0e2a8918334614c49",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-10T17:22:32Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-10T17:22:32Z"
+      },
+      "message": "mwfact, always reparent",
+      "tree": {
+        "sha": "02edf29b743ed41fb738f9e4c0f8bcaa092408c3",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/02edf29b743ed41fb738f9e4c0f8bcaa092408c3"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/d910d234c66472bd3d1f63b0e2a8918334614c49",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/d910d234c66472bd3d1f63b0e2a8918334614c49",
+    "html_url": "https://github.com/damaru/zwm/commit/d910d234c66472bd3d1f63b0e2a8918334614c49",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/d910d234c66472bd3d1f63b0e2a8918334614c49/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "efae673f4bcbed22a564aaa9c9def52e338b719f",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/efae673f4bcbed22a564aaa9c9def52e338b719f",
+        "html_url": "https://github.com/damaru/zwm/commit/efae673f4bcbed22a564aaa9c9def52e338b719f"
+      }
+    ]
+  },
+  {
+    "sha": "efae673f4bcbed22a564aaa9c9def52e338b719f",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-09T17:17:41Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-09T17:17:41Z"
+      },
+      "message": "cleanup",
+      "tree": {
+        "sha": "ac079263e6ab4abd6a4ef842736ba5c830c40701",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/ac079263e6ab4abd6a4ef842736ba5c830c40701"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/efae673f4bcbed22a564aaa9c9def52e338b719f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/efae673f4bcbed22a564aaa9c9def52e338b719f",
+    "html_url": "https://github.com/damaru/zwm/commit/efae673f4bcbed22a564aaa9c9def52e338b719f",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/efae673f4bcbed22a564aaa9c9def52e338b719f/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "843003fdc516c96676d1df6d1c913489e4bbc99e",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/843003fdc516c96676d1df6d1c913489e4bbc99e",
+        "html_url": "https://github.com/damaru/zwm/commit/843003fdc516c96676d1df6d1c913489e4bbc99e"
+      }
+    ]
+  },
+  {
+    "sha": "843003fdc516c96676d1df6d1c913489e4bbc99e",
+    "commit": {
+      "author": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-09T16:40:44Z"
+      },
+      "committer": {
+        "name": "Damaru",
+        "email": "damaru@gmail.com",
+        "date": "2012-05-09T16:40:44Z"
+      },
+      "message": "factorization in decor and mouse",
+      "tree": {
+        "sha": "71ad6856ce6210c1277d50ac3914b216c4ff4cc0",
+        "url": "https://api.github.com/repos/damaru/zwm/git/trees/71ad6856ce6210c1277d50ac3914b216c4ff4cc0"
+      },
+      "url": "https://api.github.com/repos/damaru/zwm/git/commits/843003fdc516c96676d1df6d1c913489e4bbc99e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/damaru/zwm/commits/843003fdc516c96676d1df6d1c913489e4bbc99e",
+    "html_url": "https://github.com/damaru/zwm/commit/843003fdc516c96676d1df6d1c913489e4bbc99e",
+    "comments_url": "https://api.github.com/repos/damaru/zwm/commits/843003fdc516c96676d1df6d1c913489e4bbc99e/comments",
+    "author": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "damaru",
+      "id": 118929,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/118929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/damaru",
+      "html_url": "https://github.com/damaru",
+      "followers_url": "https://api.github.com/users/damaru/followers",
+      "following_url": "https://api.github.com/users/damaru/following{/other_user}",
+      "gists_url": "https://api.github.com/users/damaru/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/damaru/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/damaru/subscriptions",
+      "organizations_url": "https://api.github.com/users/damaru/orgs",
+      "repos_url": "https://api.github.com/users/damaru/repos",
+      "events_url": "https://api.github.com/users/damaru/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/damaru/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "44553b2733d20284c227dd2a1d6a21729e1ae812",
+        "url": "https://api.github.com/repos/damaru/zwm/commits/44553b2733d20284c227dd2a1d6a21729e1ae812",
+        "html_url": "https://github.com/damaru/zwm/commit/44553b2733d20284c227dd2a1d6a21729e1ae812"
+      }
+    ]
+  }
+]
