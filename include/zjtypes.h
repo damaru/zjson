@@ -83,6 +83,7 @@ typedef struct ZJVal ZJVal;
 	const ZJVal**: ZJNVal,\
     bool*: ZJNBoolPtr, \
 	char*: ZJNCharPtr,\
+	const char*: ZJNCharPtr,\
 	unsigned char*: ZJNUCharPtr,\
 	short*: ZJNShortPtr,\
 	unsigned short*: ZJNUShortPtr,\

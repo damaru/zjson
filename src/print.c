@@ -13,6 +13,7 @@ static int print_string(ZJsonOut *o, const char *s)
 		switch (*str) {
 		case '\"': ret += o->write(o, "\\\"", 2); break;
 		case '\\': ret += o->write(o, "\\\\", 2); break;
+		case '/': ret += o->write(o, "\\/", 2); break;
 		case '\b': ret += o->write(o, "\\b", 2); break;
 		case '\f': ret += o->write(o, "\\f", 2); break;
 		case '\n': ret += o->write(o, "\\n", 2); break;
@@ -137,5 +138,7 @@ int zj_store(const ZJVal *v, const char *path)
 
 	if (!fp)
 		return 0;
-	return zj_fprint(v, fp);
+	int ret = zj_fprint(v, fp);
+	fclose(fp);
+	return ret;
 }

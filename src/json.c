@@ -215,9 +215,9 @@ const char *type_names[] =
 bool zj_value(const ZJVal *obj, ZJType atype, ...)
 {
 	va_list va;
-
 	va_start(va, atype);
-
+	if(!obj)
+		return false;
 	switch (atype) {
 	case ZJNBoolPtr:
 	{
