@@ -115,10 +115,12 @@ static ZJVal *zj_new_va(ZJType type, va_list va)
 		v = ZJNull;
 		break;
 	case ZJTNum:
+		v = zj_new_val(ZJTNum, strdup(va_arg(va, const char *)));
+		break;
 	case ZJTStr:
 	case ZJNUCharPtr:
 	case ZJNCharPtr:
-		v = zj_new_val(type, strdup(va_arg(va, const char *)));
+		v = zj_new_val(ZJTStr, strdup(va_arg(va, const char *)));
 		break;
 	case ZJTArray:
 		v = zj_array();
