@@ -62,59 +62,59 @@ typedef enum {
 typedef struct ZJVal ZJVal;
 
 #define TYPE(obj) _Generic((obj), \
-ZJTA: ZJTArray, \
-ZJTO: ZJTObj, \
-                           bool : ZJNBool, \
-                           char : ZJNChar, \
-                           unsigned char : ZJNUChar, \
-                           short : ZJNShort, \
-                           unsigned short : ZJNUShort, \
-                           int : ZJNInt, \
-                           unsigned int : ZJNUInt, \
-                           long : ZJNLong, \
-                           unsigned long : ZJNULong, \
-                           long long : ZJNLongLong, \
-                           unsigned long long : ZJNULongLong, \
-                           float : ZJNFloat, \
-                           double : ZJNDouble, \
-                           long double : ZJNLongDouble, \
-                           ZJVal * : ZJTRef, \
-                           ZJVal * *: ZJNRef, \
-                           const ZJVal * *: ZJNVal, \
-                           bool *: ZJNBoolPtr, \
-                           char *: ZJNCharPtr, \
-                           const char *: ZJNCharPtr, \
-                           unsigned char *: ZJNUCharPtr, \
-                           short *: ZJNShortPtr, \
-                           unsigned short *: ZJNUShortPtr, \
-                           int *: ZJNIntPtr, \
-                           unsigned int *: ZJNUIntPtr, \
-                           long *: ZJNLongPtr, \
-                           unsigned long *: ZJNULongPtr, \
-                           long long *: ZJNLongLongPtr, \
-                           unsigned long long *: ZJNULongLongPtr, \
-                           float *: ZJNFloatPtr, \
-                           double *: ZJNDoublePtr, \
-                           long double *: ZJNLongDoublePtr, \
-                           void *: ZJNVoidPtr)
+                bool : ZJNBool, \
+                ZJTA: ZJTArray, \
+                ZJTO: ZJTObj, \
+                char : ZJNChar, \
+                unsigned char : ZJNUChar, \
+                short : ZJNShort, \
+                unsigned short : ZJNUShort, \
+                int : ZJNInt, \
+                unsigned int : ZJNUInt, \
+                long : ZJNLong, \
+                unsigned long : ZJNULong, \
+                long long : ZJNLongLong, \
+                unsigned long long : ZJNULongLong, \
+                float : ZJNFloat, \
+                double : ZJNDouble, \
+                long double : ZJNLongDouble, \
+                ZJVal * : ZJTRef, \
+                ZJVal * *: ZJNRef, \
+                const ZJVal * *: ZJNVal, \
+                bool *: ZJNBoolPtr, \
+                char *: ZJNCharPtr, \
+                const char *: ZJNCharPtr, \
+                unsigned char *: ZJNUCharPtr, \
+                short *: ZJNShortPtr, \
+                unsigned short *: ZJNUShortPtr, \
+                int *: ZJNIntPtr, \
+                unsigned int *: ZJNUIntPtr, \
+                long *: ZJNLongPtr, \
+                unsigned long *: ZJNULongPtr, \
+                long long *: ZJNLongLongPtr, \
+                unsigned long long *: ZJNULongLongPtr, \
+                float *: ZJNFloatPtr, \
+                double *: ZJNDoublePtr, \
+                long double *: ZJNLongDoublePtr, \
+                void *: ZJNVoidPtr)
 
 #define TYPE_FMT(x) _Generic((x), \
-                             char : "%c", \
-                             signed char : "%hhd", \
-                             unsigned char : "%hhu", \
-                             signed short : "%hd", \
-                             unsigned short : "%hu", \
-                             signed int : "%d", \
-                             unsigned int : "%u", \
-                             long int : "%ld", \
-                             unsigned long int : "%lu", \
-                             long long int : "%lld", \
-                             unsigned long long int : "%llu", \
-                             float : "%f", \
-                             double : "%f", \
-                             long double : "%Lf", \
-                             char *: "%s", \
-                             void *: "%p")
+                char : "%c", \
+                signed char : "%hhd", \
+                unsigned char : "%hhu", \
+                signed short : "%hd", \
+                unsigned short : "%hu", \
+                signed int : "%d", \
+                unsigned int : "%u", \
+                long int : "%ld", \
+                unsigned long int : "%lu", \
+                long long int : "%lld", \
+                unsigned long long int : "%llu", \
+                float : "%f", \
+                double : "%f", \
+                long double : "%Lf", \
+                char *: "%s", \
+                void *: "%p")
 
 #define IS_OBJ(V) (_Generic(V, ZJVal * : 1, default: 0))
 
