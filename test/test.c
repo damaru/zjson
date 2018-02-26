@@ -86,21 +86,25 @@ int main(int argc, char **argv) {
     zj_delete(json);
     //zj_print(zen_jsonparse_stringf("[%d,%d, %d,\"%s\",%s]", 10, 100, 200000, "2032983472938742893472893742893742987498273489", "{\"foo\":918273917239187298127319827319827319827391827391283}"), 0);
     //zj_print(zen_jsonparse_stringf("[%d,%d,\"%s\"]",10,10,"fooooooooooooooooooooooo"), 0);
-    zj_print(JF( JS(
+    ZJVal * tmp = (JF( JS(
         {
             "Hello": "%s",
             "World": %s
         }
     ), "Wwhole", "91827129873192837129387129387192387129837129387129387123981723981723182739182731823" ));
+	ZJO_SET(tmp, "foo", 1235.3);
+	zj_print(tmp);
+	zj_delete(tmp);
 
     json = JF(JS([
             1, 2, 3, 3, 45, 56.34234234234253412135346456234236, {"hello":"world", "this":"is cool"},
             %d
         ]), 100);
     zj_print(json);
-    printf("getting int: %d\n",zj_array_get_int(json, 5));
-    printf("getting float: %f\n",zj_array_get_double(json, 5));
-    printf("getting string: %s\n",zj_array_get_string(json, 5));
+    printf("getting int: %d\n",ZJ_INT(zj_array_get(json, 5)));
+    printf("getting float: %f\n",ZJ_DOUBLE(zj_array_get(json, 5)));
+    printf("getting string: %s\n",ZJ_STRING(zj_array_get(json, 5)));
+	zj_delete(json);
 
     //printf("[%d,%d, %d,\"%s\",%s]\n", 10, 100, 200000, "2032983472938742893472893742893742987498273489", "{\"foo\":918273917239187298127319827319827319827391827391283}");
     return 0;

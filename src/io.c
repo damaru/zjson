@@ -60,7 +60,7 @@ static int from_string(ZJsonIn *in)
 ZJsonIn zj_string_reader(const char *js, size_t length)
 {
 	ZJsonIn io = {
-		.in	    = js,
+		.in	= js,
 		.read	= from_string,
 		.count	= 0,
 		.length = length,

@@ -14,10 +14,10 @@ static inline void process_primitive(ZJBuilder *p, ZJType t, int index, const ch
 		p->value = index ? ZJTrue : ZJFalse;
 		break;
 	case ZJTStr:
-		p->value = zj_new(ZJTStr, str);
+		p->value = zj_string(str);
 		break;
 	case ZJTNum:
-		p->value = zj_new(ZJTNum, str);
+		p->value = zj_number(str);
 		break;
 	default: break;
 	}
@@ -32,7 +32,7 @@ static void tree_builder(ZJBuilder *p, ZBuilderOp op, ZJType t, int index, const
 		process_primitive(p, t, index, str);
 		break;
 	case ZJBArrayStart:
-		obj = zj_new(ZJTArray);
+		obj = zj_array();
 		p->top++;
 		assert(p->top < BUILDER_STACK_SIZE);
 		p->current = obj;
@@ -49,7 +49,7 @@ static void tree_builder(ZJBuilder *p, ZBuilderOp op, ZJType t, int index, const
 		p->indent--;
 		break;
 	case ZJBObjectStart:
-		obj = zj_new(ZJTObj);
+		obj = zj_object();
 		p->top++;
 		assert(p->top < BUILDER_STACK_SIZE);
 		p->current = obj;

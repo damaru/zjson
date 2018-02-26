@@ -17,8 +17,11 @@ int main(int argc, char **argv) {
     }
 	ZJVal *obj = zj_object();
 	ZJVal *foo = zj_new(ZJNInt, i);
+	zj_print(foo);
 	ZJVal *arr = zj_new(ZJTArray);
+    zj_print(arr);
 	printf("GOT obj %p, foo %p\n",obj,foo);
+	ZJA_SET(arr, 10, foo);
     zj_print(foo);
 	//zj_object_set(obj, "foo", foo);
     zj_print(zj_object_get(json,"list") );
@@ -33,13 +36,12 @@ int main(int argc, char **argv) {
 	long int j = 12390482039842;
     zj_print(JF("%ld",j));
 	ZJO_SET(json, "jello",  20);
-	ZJA_SET(arr, 10, foo);
-	zj_array_append(arr, ZJNInt, 11);
-	zj_array_append(arr, ZJNInt, 12);
-	zj_array_append(arr, ZJNInt, 13);
-    zj_print(zj_float(1235345));
-	//zj_array_set_int(arr, 2, 123456);
+	ZJA_SET(arr, 20, foo);
+	zj_array_append(arr, zj_new(ZJNInt, 11));
+	zj_array_append(arr, zj_new(ZJNInt, 12));
+	zj_array_append(arr, zj_new(ZJNInt, 13));
 	zj_print(arr);
+	zj_print(ZJ_NEW(922342987349287342));
 	zj_print(ZJ_NEW(192234));
 	zj_print(ZJ_NEW(192.234));
 	zj_print(ZJ_NEW("192.234"));
@@ -56,5 +58,7 @@ int main(int argc, char **argv) {
 	zj_print(json);
 //	zj_print(ZJO_SET(json, "foo", "Howdy worlds"));
     zj_delete(json);
+    zj_delete(obj);
+	zj_delete(arr);
     return i;
 }

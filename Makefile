@@ -1,6 +1,6 @@
 
 
-OBJS= build/obj/gen.o build/obj/json.o build/obj/print.o build/obj/parser.o build/obj/io.o build/obj/builder.o build/obj/pointer.o
+OBJS= build/obj/json.o build/obj/print.o build/obj/parser.o build/obj/io.o build/obj/builder.o build/obj/pointer.o
 TESTS=build/test/ref build/test/parsef build/test/test build/test/jcat build/test/new build/test/custom build/test/patch build/test/jlint build/test/mmap build/test/get build/test/loop\
 	  build/test/clear
 
@@ -18,14 +18,11 @@ build/lib/libzjson.a: $(OBJS)
 	ar rs $@ $^
 	ranlib $@
 
-build/obj/%.o:src/%.c include/json.h include/gen.h src/*.h
+build/obj/%.o:src/%.c include/json.h  src/*.h
 		gcc $(OPTS) -fPIC $(CFLAGS) -c $< -o $@
 
 build/test/%:test/%.c build/lib/libzjson.a
 	gcc $(OPTS) -Iinclude $^ -o $@
-
-include/gen.h:src/gen.c src/structs.h
-	 cproto -I include src/gen.c > include/gen.h
 
 clean:
 	rm -v $(OBJS) $(TESTS) build/lib/libzjson.so build/lib/libzjson.a 

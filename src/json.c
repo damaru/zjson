@@ -29,8 +29,6 @@ ZJVal *zj_null(void)
 	return ZJNull;
 }
 
-/******************************************************************************/
-
 static inline ZJVal *zj_new_val(ZJType t, const void *p)
 {
 	ZJVal *ret = zj_malloc(sizeof(ZJVal));
@@ -76,38 +74,43 @@ void zj_delete(ZJVal *v)
 	zj_free(v);
 }
 
-static ZJVal *zj_new_va(ZJType type, va_list va)
+ZJVal *zj_string(const char *str){
+ 	return zj_new_val(ZJTStr, strdup(str));
+}
+
+ZJVal *zj_number(const char *str){
+ 	return zj_new_val(ZJTNum, strdup(str));
+}
+
+ZJVal *zj_new(ZJType type, ...)
 {
+	va_list va;
+
+	va_start(va, type);
 	ZJVal *v = NULL;
 
-	if (type >= ZJNChar && type <= ZJNLongDouble) {
-		const char *fmts[] = {
-			[ZJNChar] = "%c",
-			[ZJNUChar] = "%hhu",
-			[ZJNShort] = "%hd",
-			[ZJNUShort] = "%hu",
-			[ZJNInt] = "%d",
-			[ZJNUInt] = "%u",
-			[ZJNLong] = "%ld",
-			[ZJNULong] = "%lu",
-			[ZJNLongLong] = "%lld",
-			[ZJNULongLong] = "%llu",
-			[ZJNFloat] = "%f",
-			[ZJNDouble] = "%lf",
-			[ZJNLongDouble] = "%Lf",
-			[ZJNCharPtr] = "%s",
-			[ZJNVoidPtr] = "%p",
-		};
-
-
-		const char *fmt = fmts[type];
-		char num[256];
-		vsnprintf(num, 256, fmt, va);
-		num[255] = 0;
-		return zj_new_val(ZJTNum, strdup(num));
-	}
-
 	switch (type) {
+#define X(T, fmt)                                           \
+	case T: {                                               \
+			char num[128];                                  \
+			vsnprintf(num, 128, fmt, va);                   \
+			v = zj_number(num);                             \
+		}                                                   \
+		break
+		X(ZJNChar, "%c");
+		X(ZJNUChar, "%hhu");
+		X(ZJNShort, "%hd");
+		X(ZJNUShort, "%hu");
+		X(ZJNInt, "%d");
+		X(ZJNUInt, "%u");
+		X(ZJNLong, "%ld");
+		X(ZJNULong, "%lu");
+		X(ZJNLongLong, "%lld");
+		X(ZJNULongLong, "%llu");
+		X(ZJNFloat, "%f");
+		X(ZJNDouble, "%lf");
+		X(ZJNLongDouble, "%Lf");
+#undef X
 	case ZJTBool:
 		v = va_arg(va, bool) ? ZJTrue : ZJFalse;
 		break;
@@ -115,12 +118,12 @@ static ZJVal *zj_new_va(ZJType type, va_list va)
 		v = ZJNull;
 		break;
 	case ZJTNum:
-		v = zj_new_val(ZJTNum, strdup(va_arg(va, const char *)));
+		v = zj_number(va_arg(va, const char *));
 		break;
 	case ZJTStr:
 	case ZJNUCharPtr:
 	case ZJNCharPtr:
-		v = zj_new_val(ZJTStr, strdup(va_arg(va, const char *)));
+		v = zj_string(va_arg(va, const char *));
 		break;
 	case ZJTArray:
 		v = zj_array();
@@ -128,8 +131,11 @@ static ZJVal *zj_new_va(ZJType type, va_list va)
 	case ZJTObj:
 		v = zj_object();
 		break;
+	case ZJTRef:
+		v = zj_ref(va_arg(va, ZJVal *));
+		break;
 	case ZJNRef:
-		v = va_arg(va, ZJVal *);
+		assert(!"Type not supported");
 		break;
 	default:
 		if (type >= ZJEnd) {
@@ -140,16 +146,7 @@ static ZJVal *zj_new_va(ZJType type, va_list va)
 		}
 		break;
 	}
-	return v;
-}
 
-ZJVal *zj_new(ZJType type, ...)
-{
-	va_list va;
-
-	va_start(va, type);
-	ZJVal *v = NULL;
-	v = zj_new_va(type, va);
 	va_end(va);
 	return v;
 }
@@ -215,18 +212,16 @@ const char *type_names[] =
 bool zj_value(const ZJVal *obj, ZJType atype, ...)
 {
 	va_list va;
+
 	va_start(va, atype);
-	if(!obj)
+	if (!obj)
 		return false;
 	switch (atype) {
 	case ZJNBoolPtr:
-	{
-		bool *baddr = va_arg(va, bool *);
-		*baddr = (obj != ZJFalse && obj != ZJNull);
-	}
+		*va_arg(va, bool *) = (obj != ZJFalse && obj != ZJNull);
+		break;
 	case ZJNCharPtr:
 	case ZJNUCharPtr:
-	{
 		if (obj->type == ZJTStr || obj->type == ZJTNum) {
 			char *caddr = va_arg(va, char *);
 			strncpy(caddr, obj->string, strlen(obj->string) + 1);
@@ -235,52 +230,33 @@ bool zj_value(const ZJVal *obj, ZJType atype, ...)
 			int len = va_arg(va, int);
 			zj_sprint(obj, caddr, len);
 		}
-	}
-	break;
-	case ZJNVal:
-	{
-		ZJVal const **ref = va_arg(va, ZJVal const **);
-		*ref = obj;
-	}
-	break;
-	case ZJNRef:
-	{
-		ZJVal **ref = va_arg(va, ZJVal * *);
-		*ref = zj_ref(obj);
-	}
-	break;
-	default:
-
-		if (atype >= ZJNCharPtr && atype <= ZJNVoidPtr && obj->type == ZJTNum) {
-			const char *fmts[] = {
-				[ZJNShortPtr] = "%hd",
-				[ZJNUShortPtr] = "%hu",
-				[ZJNIntPtr] = "%d",
-				[ZJNUIntPtr] = "%u",
-				[ZJNLongPtr] = "%ld",
-				[ZJNULongPtr] = "%lu",
-				[ZJNLongLongPtr] = "%lld",
-				[ZJNULongLongPtr] = "%llu",
-				[ZJNFloatPtr] = "%f",
-				[ZJNDoublePtr] = "%lf",
-				[ZJNLongDoublePtr] = "%Lf",
-				[ZJNCharPtr] = "%s",
-				[ZJNVoidPtr] = "%p",
-			};
-
-			void *addr = va_arg(va, void *);
-			sscanf(obj->string, fmts[atype], addr);
-		} else {
-			fprintf(stderr, "Type Mismatch for %s %s != %s\n", obj->string, type_names[obj->type], type_names[atype]);
-			return false;
-		}
 		break;
+	case ZJNVal:
+		*va_arg(va, ZJVal const **) = obj;
+		break;
+	case ZJNRef:
+		*va_arg(va, ZJVal **) = zj_ref(obj);
+		break;
+#define X(T, t, ...) case T: *va_arg(va, t) = __VA_ARGS__; break
+		X(ZJNShortPtr, short *, ZJ_SHORT(obj));
+		X(ZJNUShortPtr, unsigned short *, ZJ_USHORT(obj));
+		X(ZJNIntPtr, int *, ZJ_INT(obj));
+		X(ZJNUIntPtr, unsigned int *, ZJ_UINT(obj));
+		X(ZJNLongPtr, long *, ZJ_LONG(obj));
+		X(ZJNULongPtr, unsigned long *, ZJ_ULONG(obj));
+		X(ZJNLongLongPtr, long long *, ZJ_LLONG(obj));
+		X(ZJNULongLongPtr, unsigned long long *, ZJ_ULLONG(obj));
+		X(ZJNFloatPtr, float *, ZJ_FLOAT(obj));
+		X(ZJNDoublePtr, double *, ZJ_DOUBLE(obj));
+		X(ZJNLongDoublePtr, long double *, ZJ_LDOUBLE(obj));
+#undef X
+	default:
+		fprintf(stderr, "Type Mismatch for %s %s != %s\n", obj->string, type_names[obj->type], type_names[atype]);
+		return false;
 	}
 	va_end(va);
 	return true;
 }
-
-/******************************************************************************/
 
 ZJVal *zj_array(void)
 {
@@ -308,6 +284,8 @@ const ZJVal *zj_array_get(const ZJVal *arr, int index)
 
 void zj_array_set_ref(ZJVal *obj, int index, ZJVal *val)
 {
+	assert(obj);
+	assert(val);
 	assert(obj->type == ZJTArray);
 	ZJArray *arr = obj->array;
 	while (index >= arr->alloc) {
@@ -321,55 +299,27 @@ void zj_array_set_ref(ZJVal *obj, int index, ZJVal *val)
 	if (arr->count <= index)
 		arr->count = index + 1;
 
-	if (arr->data[index])
+	if (arr->data[index] && arr->data[index] != ZJNull)
 		zj_delete(arr->data[index]);
 	arr->data[index] = val;
 }
 
-void zj_array_set_va(ZJVal *obj, int index, ZJType t, va_list va)
+void zj_array_set(ZJVal *obj, int index, ZJVal *val)
 {
-	ZJVal *n;
-
-	if (t == ZJTRef)
-		n = va_arg(va, ZJVal *);
-	else
-		n = zj_new_va(t, va);
-	zj_array_set_ref(obj, index, n);
+	zj_array_set_ref(obj, index, val);
 }
 
-void zj_array_set(ZJVal *obj, int index, ZJType t, ...)
-{
-	va_list va;
-
-	assert(obj->type == ZJTArray);
-	va_start(va, t);
-	zj_array_set_va(obj, index, t, va);
-	va_end(va);
-}
-
-void zj_array_append_val(ZJVal *obj, ZJVal *val)
+void zj_array_append(ZJVal *obj, ZJVal *val)
 {
 	zj_array_set_ref(obj, obj->array->count, val);
 }
 
-void zj_array_append(ZJVal *obj, ZJType t, ...)
-{
-	va_list va;
-
-	assert(obj->type == ZJTArray);
-	va_start(va, t);
-	zj_array_set_va(obj, obj->array->count, t, va);
-	va_end(va);
-}
-
-void zj_array_foreach(const ZJVal *obj, int (*func)(int, ZJVal *))
+void zj_array_foreach(const ZJVal *obj, int (*func)(int, ZJVal *, void*), void* cookie)
 {
 	for (int i = 0; i < obj->array->count; i++)
-		if (func(i, obj->array->data[i]))
+		if (func(i, obj->array->data[i], cookie))
 			break;
 }
-
-/******************************************************************************/
 
 ZJVal *zj_object(void)
 {
@@ -377,7 +327,7 @@ ZJVal *zj_object(void)
 	ZJObject *object = zj_malloc(sizeof(ZJObject) + sizeof(ZJPair) * alloc);
 
 	object->count = 0;
-	object->alloc = ZJSON_INIT_ALLOC;
+	object->alloc = alloc;
 	return zj_new_val(ZJTObj, object);
 }
 
@@ -416,31 +366,32 @@ void zj_object_clear(ZJVal *obj, const char *key)
 void zj_object_set_ref(ZJVal *obj, const char *key, ZJVal *val)
 {
 	int i;
+	ZJObject *object = obj->object;
 
 	assert(obj->type == ZJTObj);
-	for (i = 0; i < obj->object->count && obj->object->pairs[i].key; i++) {
-		if (strcmp(key, obj->object->pairs[i].key) == 0) {
-			if (val != obj->object->pairs[i].value)
-				zj_delete(obj->object->pairs[i].value);
-			zj_free(obj->object->pairs[i].key);
-			obj->object->pairs[i].value = val;
-			obj->object->pairs[i].key = key;
+	for (i = 0; i < object->count && object->pairs[i].key; i++) {
+		if (strcmp(key, object->pairs[i].key) == 0) {
+			if (val != object->pairs[i].value)
+				zj_delete(object->pairs[i].value);
+			zj_free(object->pairs[i].key);
+			object->pairs[i].value = val;
+			object->pairs[i].key = key;
 			return;
 		}
 	}
 
-	if (i >= obj->object->alloc) {
-		obj->object = zj_realloc(obj->object, sizeof(ZJObject) + obj->object->alloc * 2 * sizeof(ZJPair));
-		obj->object->alloc *= 2;
-		for (int j = i; j < obj->object->alloc; j++) {
-			obj->object->pairs[j].key = NULL;
-			obj->object->pairs[j].value = NULL;
+	if (i >= object->alloc) {
+		object = obj->object = zj_realloc(object, sizeof(ZJObject) + object->alloc * 2 * sizeof(ZJPair));
+		object->alloc *= 2;
+		for (int j = i; j < object->alloc; j++) {
+			object->pairs[j].key = NULL;
+			object->pairs[j].value = NULL;
 		}
 	}
 
-	obj->object->pairs[i].key = key;
-	obj->object->pairs[i].value = val;
-	obj->object->count++;
+	object->pairs[i].key = key;
+	object->pairs[i].value = val;
+	object->count++;
 }
 
 int zj_object_count(ZJVal *obj)
@@ -448,40 +399,21 @@ int zj_object_count(ZJVal *obj)
 	return obj->object->count;
 }
 
-void zj_object_set(ZJVal *obj, const char *index, ZJType t, ...)
+void zj_object_set(ZJVal *obj, const char *index, ZJVal *n)
 {
-	va_list va;
-	ZJVal *n;
-
-	va_start(va, t);
-	assert(obj->type == ZJTObj);
-
-	if (t == ZJTRef)
-		n = va_arg(va, ZJVal *);
-	else
-		n = zj_new_va(t, va);
-
 	zj_object_set_ref(obj, strdup(index), n);
-	va_end(va);
 }
 
-void zj_object_foreach(const ZJVal *obj, int (*func)(const char *, ZJVal *))
+void zj_object_foreach(const ZJVal *obj, int (*func)(const char *, ZJVal *, void *), void *cookie)
 {
 	for (int i = 0; i < obj->object->count; i++)
-		if (func(obj->object->pairs[i].key, obj->object->pairs[i].value))
+		if (func(obj->object->pairs[i].key, obj->object->pairs[i].value, cookie))
 			break;
 }
 
-void zj_object_set_val(ZJVal *obj, const char *key, ZJVal *val)
-{
-	zj_object_set_ref(obj, strdup(key), zj_ref(val));
-}
-
-/******************************************************************************/
-
 /*
-	https://tools.ietf.org/html/rfc7396
-*/
+ *      https://tools.ietf.org/html/rfc7396
+ */
 ZJVal *zj_patch(ZJVal *target, const ZJVal *patch)
 {
 	if (patch->type == ZJTObj) {
@@ -504,7 +436,6 @@ ZJVal *zj_patch(ZJVal *target, const ZJVal *patch)
 	}
 }
 
-/******************************************************************************/
 static ZJType type_start = ZJEnd;
 ZJCustomType ZJCustomTypes[64];
 
@@ -526,4 +457,3 @@ ZJVal *zjt_set(ZJVal *v, void *data)
 	v->string = data;
 	return v;
 }
-/******************************************************************************/
