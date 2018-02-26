@@ -18,7 +18,7 @@ build/lib/libzjson.a: $(OBJS)
 	ar rs $@ $^
 	ranlib $@
 
-build/obj/%.o:src/%.c include/json.h  src/*.h
+build/obj/%.o:src/%.c include/*.h  src/*.h
 		gcc $(OPTS) -fPIC $(CFLAGS) -c $< -o $@
 
 build/test/%:test/%.c build/lib/libzjson.a

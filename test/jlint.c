@@ -2,8 +2,8 @@
 
 int main(int argc, char **argv)
 {
-	ZJVal *out = zj_load(argv[1]);
+    ZJVal *out = zj_load(argv[1]);
 
-	zj_delete(out);
-	return 0;
+    zj_delete(out);
+    return 0;
 }

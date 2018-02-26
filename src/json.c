@@ -74,12 +74,14 @@ void zj_delete(ZJVal *v)
     zj_free(v);
 }
 
-ZJVal *zj_string(const char *str){
-     return zj_new_val(ZJTStr, strdup(str));
+ZJVal *zj_string(const char *str)
+{
+    return zj_new_val(ZJTStr, strdup(str));
 }
 
-ZJVal *zj_number(const char *str){
-     return zj_new_val(ZJTNum, strdup(str));
+ZJVal *zj_number(const char *str)
+{
+    return zj_new_val(ZJTNum, strdup(str));
 }
 
 ZJVal *zj_new(ZJType type, ...)
@@ -90,13 +92,13 @@ ZJVal *zj_new(ZJType type, ...)
     ZJVal *v = NULL;
 
     switch (type) {
-#define X(T, fmt)                                           \
-    case T: {                                               \
-            char num[128];                                  \
-            vsnprintf(num, 128, fmt, va);                   \
-            v = zj_number(num);                             \
-        }                                                   \
-        break
+#define X(T, fmt)                                   \
+case T: {                                           \
+    char num[128];                                  \
+    vsnprintf(num, 128, fmt, va);                   \
+    v = zj_number(num);                             \
+}                                                   \
+break
         X(ZJNChar, "%c");
         X(ZJNUChar, "%hhu");
         X(ZJNShort, "%hd");
@@ -235,7 +237,7 @@ bool zj_value(const ZJVal *obj, ZJType atype, ...)
         *va_arg(va, ZJVal const **) = obj;
         break;
     case ZJNRef:
-        *va_arg(va, ZJVal **) = zj_ref(obj);
+        *va_arg(va, ZJVal * *) = zj_ref(obj);
         break;
 #define X(T, t, ...) case T: *va_arg(va, t) = __VA_ARGS__; break
         X(ZJNShortPtr, short *, ZJ_SHORT(obj));
@@ -314,7 +316,7 @@ void zj_array_append(ZJVal *obj, ZJVal *val)
     zj_array_set_ref(obj, obj->array->count, val);
 }
 
-void zj_array_foreach(const ZJVal *obj, int (*func)(int, ZJVal *, void*), void* cookie)
+void zj_array_foreach(const ZJVal *obj, int (*func)(int, ZJVal *, void *), void *cookie)
 {
     for (int i = 0; i < obj->array->count; i++)
         if (func(i, obj->array->data[i], cookie))
