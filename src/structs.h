@@ -8,16 +8,23 @@ struct ZJArray {
 	int	alloc;
 	ZJVal *data[1];
 };
-
-typedef struct {
+typedef struct ZJPair ZJPair;
+struct ZJPair {
+	ZJPair *next;
+	ZJPair *onext;
+	ZJPair *oprev;
 	ZJVal *value;
 	const char *key;
-} ZJPair;
+} ;
 
 struct ZJObject {
-	int	count;
-	int	alloc;
-	ZJPair	pairs[1];
+	int size  ;/**< size of bucket array                */
+	int active;/**< Active buckets                      */
+	int victim;/**< next bucket to be split             */
+	int count ;/**< number of hash elements             */
+	ZJPair **buckets;
+	ZJPair *first;
+	ZJPair *last;
 };
 extern ZJCustomType ZJCustomTypes[64];
 

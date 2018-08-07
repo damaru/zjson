@@ -49,7 +49,7 @@ ZJsonIn zj_fd_reader(int fd)
 
 static int from_string(ZJsonIn *in)
 {
-    if (in->count >= in->length)
+    if (in->count >= in->length-1)
         return -EOF;
     in->c = in->next;
     in->count++;
@@ -64,7 +64,7 @@ ZJsonIn zj_string_reader(const char *js, size_t length)
         .read   = from_string,
         .count  = 0,
         .length = length,
-        .next   = *js
+        .next   = length>1?*js:0
     };
 
     return io;

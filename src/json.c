@@ -62,11 +62,7 @@ void zj_delete(ZJVal *v)
         zj_free(v->array);
         break;
     case ZJTObj:
-        for (int i = 0; i < v->object->count; i++) {
-            zj_free(v->object->pairs[i].key);
-            zj_delete(v->object->pairs[i].value);
-        }
-        zj_free(v->object);
+        zj_object_delete(v);
         break;
     default:
         break;
@@ -114,7 +110,7 @@ break
         X(ZJNLongDouble, "%Lf");
 #undef X
     case ZJTBool:
-        v = va_arg(va, bool) ? ZJTrue : ZJFalse;
+        v = va_arg(va, int) ? ZJTrue : ZJFalse;
         break;
     case ZJTNull:
         v = ZJNull;
@@ -323,115 +319,28 @@ void zj_array_foreach(const ZJVal *obj, int (*func)(int, ZJVal *, void *), void 
             break;
 }
 
-ZJVal *zj_object(void)
-{
-    int alloc = ZJSON_INIT_ALLOC;
-    ZJObject *object = zj_malloc(sizeof(ZJObject) + sizeof(ZJPair) * alloc);
-
-    object->count = 0;
-    object->alloc = alloc;
-    return zj_new_val(ZJTObj, object);
-}
-
-const ZJVal *zj_object_get(const ZJVal *obj, const char *key)
-{
-    ZJVal *ret = NULL;
-    ZJObject *object = obj->object;
-
-    assert(obj->type == ZJTObj);
-    for (int i = 0; i < object->count; i++) {
-        if (strcmp(key, object->pairs[i].key) == 0) {
-            ret = object->pairs[i].value;
-            break;
-        }
-    }
-    return ret;
-}
-
-void zj_object_clear(ZJVal *obj, const char *key)
-{
-    assert(obj->type == ZJTObj);
-    ZJObject *object = obj->object;
-    for (int i = 0; i < object->count; i++) {
-        if (strcmp(key, object->pairs[i].key) == 0) {
-            ZJVal *old = object->pairs[i].value;
-            zj_delete(old);
-            zj_free(object->pairs[i].key);
-            object->count--;
-            for (int j = i; j < object->count; j++)
-                object->pairs[j] = object->pairs[j + 1];
-            return;
-        }
-    }
-}
-
-void zj_object_set_ref(ZJVal *obj, const char *key, ZJVal *val)
-{
-    int i;
-    ZJObject *object = obj->object;
-
-    assert(obj->type == ZJTObj);
-    for (i = 0; i < object->count && object->pairs[i].key; i++) {
-        if (strcmp(key, object->pairs[i].key) == 0) {
-            if (val != object->pairs[i].value)
-                zj_delete(object->pairs[i].value);
-            zj_free(object->pairs[i].key);
-            object->pairs[i].value = val;
-            object->pairs[i].key = key;
-            return;
-        }
-    }
-
-    if (i >= object->alloc) {
-        object = obj->object = zj_realloc(object, sizeof(ZJObject) + object->alloc * 2 * sizeof(ZJPair));
-        object->alloc *= 2;
-        for (int j = i; j < object->alloc; j++) {
-            object->pairs[j].key = NULL;
-            object->pairs[j].value = NULL;
-        }
-    }
-
-    object->pairs[i].key = key;
-    object->pairs[i].value = val;
-    object->count++;
-}
-
-int zj_object_count(ZJVal *obj)
-{
-    return obj->object->count;
-}
-
-void zj_object_set(ZJVal *obj, const char *index, ZJVal *n)
-{
-    zj_object_set_ref(obj, strdup(index), n);
-}
-
-void zj_object_foreach(const ZJVal *obj, int (*func)(const char *, ZJVal *, void *), void *cookie)
-{
-    for (int i = 0; i < obj->object->count; i++)
-        if (func(obj->object->pairs[i].key, obj->object->pairs[i].value, cookie))
-            break;
-}
 
 /*
  *      https://tools.ietf.org/html/rfc7396
  */
+
+int do_patch(const char *key, ZJVal *val, void *target){
+    if(val == ZJNull){
+        zj_object_clear((ZJVal*)target, key);
+    } else{
+        ZJVal *ovalue = (ZJVal *)zj_object_get((ZJVal*)target, key);
+        zj_object_set_ref((ZJVal*)target, strdup(key), zj_patch(ovalue, val));
+    }
+    return 0;
+}
+
 ZJVal *zj_patch(ZJVal *target, const ZJVal *patch)
 {
     if (patch->type == ZJTObj) {
         if (target->type != ZJTObj)
             target = zj_object();
 
-        for (int i = 0; i < patch->object->count; i++) {
-            ZJVal *value = patch->object->pairs[i].value;
-            const char *key = patch->object->pairs[i].key;
-            if (value == ZJNull) {
-                zj_object_clear(target, key);
-            } else {
-                ZJVal *ovalue = (ZJVal *)zj_object_get(target, key);
-                zj_object_set_ref(target, strdup(key), zj_patch(ovalue, value));
-            }
-        }
+        zj_object_foreach(patch, do_patch, target);
         return target;
     } else {
         return zj_ref(patch);

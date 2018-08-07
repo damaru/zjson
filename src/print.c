@@ -3,6 +3,7 @@
 #include "json.h"
 #include "structs.h"
 
+static int serialize_to(const ZJVal *v, int indent, ZJsonOut *o);
 static int print_string(ZJsonOut *o, const char *s)
 {
     const char *str = s;
@@ -25,6 +26,32 @@ static int print_string(ZJsonOut *o, const char *s)
         str++;
     }
     ret += o->write(o, "\"", 1);
+    return ret;
+}
+
+static int zj_object_serialize(const ZJVal *obj, int indent, ZJsonOut *o){
+    char tmp[64];
+    int ret = 0;
+    //ZJPair *q;
+    int c = 0;
+    ret += o->write(o, "{\n", 2);
+    indent += 4;
+    int ilen = sprintf(tmp, "%*s", indent, " ");
+    for(ZJPair *p = obj->object->first; p; p = p->onext){
+            ret += o->write(o, tmp, ilen);
+            ret += print_string(o, p->key);
+            ret += o->write(o, ": ", 2);
+            ret += serialize_to(p->value, indent, o);
+            if (c < obj->object->count - 1)
+                ret += o->write(o, ",\n", 2);
+            else
+                ret += o->write(o, "\n", 1);
+            c = c + 1;
+    }
+    indent -= 4;
+    ilen = sprintf(tmp, "%*s", indent, " ");
+    ret += o->write(o, tmp, ilen);
+    ret += o->write(o, "}", 1);
     return ret;
 }
 
@@ -71,27 +98,8 @@ static int serialize_to(const ZJVal *v, int indent, ZJsonOut *o)
     }
     break;
     case ZJTObj:
-    {
-        int i;
-        ret += o->write(o, "{\n", 2);
-        indent += 4;
-        int ilen = sprintf(tmp, "%*s", indent, " ");
-        for (i = 0; i < v->object->count; i++) {
-            ret += o->write(o, tmp, ilen);
-            ret += print_string(o, v->object->pairs[i].key);
-            ret += o->write(o, ": ", 2);
-            ret += serialize_to(v->object->pairs[i].value, indent, o);
-            if (i < v->object->count - 1)
-                ret += o->write(o, ",\n", 2);
-            else
-                ret += o->write(o, "\n", 1);
-        }
-        indent -= 4;
-        ilen = sprintf(tmp, "%*s", indent, " ");
-        ret += o->write(o, tmp, ilen);
-        ret += o->write(o, "}", 1);
-    }
-    break;
+        ret += zj_object_serialize(v, indent, o);
+        break;
     default:
         break;
     }

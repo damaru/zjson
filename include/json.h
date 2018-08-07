@@ -102,6 +102,7 @@ void zj_object_set(ZJVal *obj, const char *key, ZJVal *val);
 void zj_object_set_ref(ZJVal *obj, const char *key, ZJVal *val);
 void zj_object_clear(ZJVal *obj, const char *key);
 void zj_object_foreach(const ZJVal *obj, int (*func)(const char *, ZJVal *, void *), void *cookie);
+void zj_object_delete(ZJVal *obj);
 
 #define ZJO_SET(OBJ, IND, VAL) zj_object_set((OBJ), (IND), ZJ_NEW((VAL)))
 #define ZJO_GET(obj, index, addr) zj_value(zj_object_get(obj, index), TYPE(addr), addr, 0)

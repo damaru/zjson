@@ -314,6 +314,7 @@ static ZJType parse_object(ZJParser *p)
 {
     p->b.build(&p->b, ZJBObjectStart, ZJTObj, 0, p->str.p);
     ZJType ret = ZJTObj;
+    skip_space(p);
     while (!is_token(p, '}')) {
         ZJType key = parse(p);
         if (key != ZJTStr)
@@ -341,6 +342,7 @@ static ZJType parse_array(ZJParser *p)
     int i = 0;
 
     p->b.build(&p->b, ZJBArrayStart, ZJTArray, 0, p->str.p);
+    skip_space(p);
     while (!is_token(p, ']')) {
         ZJType value = parse(p);
         if (value) {
