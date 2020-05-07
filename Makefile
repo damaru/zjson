@@ -26,3 +26,13 @@ build/test/%:test/%.c build/lib/libzjson.a
 
 clean:
 	rm -v $(OBJS) $(TESTS) build/lib/libzjson.so build/lib/libzjson.a 
+
+install: $(TARGETS)
+	- find build -name '*.so' | xargs -n 1 ./scripts/install $(PREFIX)/usr/lib
+	- find build -name '*.a' | xargs -n 1 ./scripts/install $(PREFIX)/usr/lib
+#	- find build -name '*.la' | xargs -n 1 ./scripts/install $(PREFIX)/usr/lib
+	- find . -name '*.h' | xargs -n 1 scripts/install $(PREFIX)/usr/include/zjson
+
+uninstall: all
+	- find build -name '*.so' | xargs -n 1 ./scripts/uninstall $(PREFIX)/usr/lib 
+	- find . -name '*.h' | xargs -n 1 scripts/uninstall $(PREFIX)/usr/include/zjson
