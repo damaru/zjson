@@ -55,6 +55,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
- 
- # Local build directory
- build/
+
+# Local build directory
+build/
