@@ -14,7 +14,7 @@ CFLAGS=-Iinclude -pedantic-errors -Wall -Werror -Wa,--noexecstack
 LDFLAGS+=-Wl,-z,noexecstack
 
 build/lib/libzjson.so: $(OBJS)
-		gcc $(OPTS) -fPIC $(CFLAGS) --shared $< $(LDFLAGS) -o $@
+		gcc $(OPTS) -fPIC $(CFLAGS) --shared $^ $(LDFLAGS) -o $@
 
 build/lib/libzjson.a: $(OBJS)
 	ar rs $@ $^
