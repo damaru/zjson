@@ -9,10 +9,12 @@ all: build/lib/libzjson.so build/lib/libzjson.a $(TESTS)
 #OPTS+=-g
 OPTS+=-O3
 
-CFLAGS=-Iinclude -pedantic-errors -Wall -Werror
+# Enforce non-executable stack at compile and link time
+CFLAGS=-Iinclude -pedantic-errors -Wall -Werror -Wa,--noexecstack
+LDFLAGS+=-Wl,-z,noexecstack
 
 build/lib/libzjson.so: $(OBJS)
-		gcc $(OPTS) -fPIC $(CFLAGS) --shared $< -o $@
+		gcc $(OPTS) -fPIC $(CFLAGS) --shared $< $(LDFLAGS) -o $@
 
 build/lib/libzjson.a: $(OBJS)
 	ar rs $@ $^
@@ -22,7 +24,7 @@ build/obj/%.o:src/%.c include/*.h  src/*.h
 		gcc $(OPTS) -fPIC $(CFLAGS) -c $< -o $@
 
 build/test/%:test/%.c build/lib/libzjson.a
-	gcc $(OPTS) -Iinclude $^ -o $@
+	gcc $(OPTS) -Wa,--noexecstack -Iinclude $^ $(LDFLAGS) -o $@
 
 clean:
 	rm -v $(OBJS) $(TESTS) build/lib/libzjson.so build/lib/libzjson.a 

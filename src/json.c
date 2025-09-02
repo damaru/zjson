@@ -222,7 +222,8 @@ bool zj_value(const ZJVal *obj, ZJType atype, ...)
     case ZJNUCharPtr:
         if (obj->type == ZJTStr || obj->type == ZJTNum) {
             char *caddr = va_arg(va, char *);
-            strncpy(caddr, obj->string, strlen(obj->string) + 1);
+            size_t n = strlen(obj->string);
+            memcpy(caddr, obj->string, n + 1);
         } else {
             char *caddr = va_arg(va, char *);
             int len = va_arg(va, int);
